@@ -1,1 +1,8 @@
 language: java
+
+install: true
+
+script:
+  - rm -rf out
+  - mkdir out
+  - javac -d out -cp lib/commons-io-2.6.jar src/br/com/rtp/*.java
